@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Krona One', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+    }
+    .left{
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+    .left img{
+        padding: 0px 20px;
+        width: 75px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+        /*border: 2px solid green;*/
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover{
+        color: rgb(80, 70, 70);
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+    }
+    .btn{
+        font-family: 'Krona One', sans-serif;
+        margin: 0px 10px;
+        padding:4px 14px;
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(49, 46, 46);
+    }
+    .container{
+        /*border: 2px solid blueviolet;*/
+        margin: 80px 55px;
+        padding: 65px 10px;
+        width: 35%;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .form input{
+        font-family: 'Krona One', sans-serif;
+        /*border: 2px solid whitesmoke;*/
+        border-radius: 9px;
+        margin: 10px auto;
+        text-align: center;
+        width: 200px;
+        display: block;
+        background-color: blanchedalmond;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo.-->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Yash Fitness</div>
+        </div>
+        <!--mid for navigation bar.-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://google.com" target="_blank">Home</a></li>
+                <li><a href="https://facebook.com" target="_blank">About Us</a></li>
+                <li><a href="https://twitter.com" target="_blank">Fitness Calculator</a></li>
+                <li><a href="https://instagram.com" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right for buttons.-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Gujarat</h2>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Phone">
+            </div>
+            <button class="btn">submit</button>    
+        </form>
+    </div>
+</body>
+</html>
